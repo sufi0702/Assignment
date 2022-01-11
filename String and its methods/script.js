@@ -12,6 +12,7 @@ function stringMethods() {
     " " +
     lastName.charAt(0).toUpperCase() +
     lastName.slice(1);
+  
   document.querySelector("table").innerHTML =
     "<tr><th>Full Name</th><th>Email ID</th><th>Age</th><th>Person Type</th></tr><tr><td>" +
           fullName+"</td><td>"+emailID+"</td><td>"+age+"</td><td>" + personType +"</td></tr>";
