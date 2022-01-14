@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment of Array & Object</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+</head>
+
+<body class="m-0">
+
+    <main class="">
+        <h1 class="txt-center">Save Dynamic Data JS Assignment</h1>
+        <div class="form-container">
+            <form onsubmit="addNewSlide(event)" id="newSlideForm">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name-input" name="name" required placeholder="Enter Your Full Name">
+                <br>
+                <br>
+                <label for="designation">Designation:</label>
+                <br>
+                <input type="text" id="designation-input" name="designation" required placeholder="Enter Your Designation">
+                <br>
+                <br>
+                <label for="description">Description:</label>
+                <br>
+                <textarea id="description-input" name="description" required placeholder="Enter Description about you"></textarea>
+                <br>
+                <br>
+                <input type="submit" id="submit-btn" value="Add Details" />
+            </form> 
+        </div>
+        <div class="content-container">
+            <div id="images"></div>
+            <div id="content">
+            </div>
+            <div class="btn-container">
+                <span class="pervious" title="Pervious Slide/Profile" onclick="showSlider(slideIndex += -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <div id="dots"></div>
+                <span class="next" title="Next Slide/Profile" onclick="showSlider(slideIndex += +1)">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js" type="text/Javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+}
+body {
+  margin: 0;
+  background-color: #cfffdc;
+}
+.txt-center {
+  text-align: center;
+}
+h1 {
+  color: #7900ff;
+}
+.form-container {
+  width: 30%;
+  margin: 1%;
+  float: left;
+  color: #93ffd8;
+  font-weight: bolder;
+  font-size: 22px;
+  padding: 40px;
+  background-color: #7900ff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px 0px #42685a;
+}
+#name-input,
+#designation-input,
+#description-input {
+  margin-top: 5px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 3px solid #548cff;
+}
+#description-input {
+  height: 100px;
+  width: 70%;
+}
+#name-input:focus,
+#designation-input:focus,
+#description-input:focus{
+  border: 5px solid #cfffdc;
+}
+#submit-btn{
+  background-color: #CCA8E9;
+  color: #DEFCF9;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.content-container {
+  width: 65%;
+  float: right;
+  text-align: center;
+  margin: 1%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0px 5px 20px 0px #42685a;
+}
+#images{
+  width: 25%;
+  margin: auto;
+}
+h2{
+  margin: 2% 0% 0%;
+}
+h4{
+  margin: 0%;
+  color: #7900ff;
+}
+p{
+  width: 80%;
+  margin: auto;
+  padding: 2% 0%;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 5px 0px;
+}
+.next, .pervious{
+  color: #7900ff;
+}
+span {
+  cursor: pointer;
+  color: #93FFD8;
+  margin: auto;
+}
+span:hover {
+  color: #548cff;
+}
+#dots {
+  margin-top: 10px;
+  display: inline;
+}
+.on {
+  color: #7900ff;
+}
