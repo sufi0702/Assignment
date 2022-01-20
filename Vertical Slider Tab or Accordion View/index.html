@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 1st Assignment</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Vertical Tab View Using jQuery</h1>
+    <main>
+        <div class="tab">
+            <span><a href="#tab1">Tab 1</a></span>
+            <div class="tab-content" id="tab1">
+                <h3>Tab 1</h3>
+                <hr size="4" color="cornflowerblue">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti officiis placeat delectus unde
+                    similique repellat doloribus iste quo accusamus aliquid distinctio quas, cupiditate nemo?</p>
+            </div>
+        </div>
+        <div class="tab">
+            <span><a href="#tab2">Tab 2</a></span>
+            <div class="tab-content" id="tab2">
+                <h3>Tab 2</h3>
+                <hr size="4" color="pink">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti officiis placeat delectus unde
+                    similique repellat doloribus iste quo accusamus aliquid distinctio quas, cupiditate nemo?</p>
+            </div>
+        </div>
+        <div class="tab">
+            <span><a href="#tab3">Tab 3</a></span>
+            <div class="tab-content" id="tab3">
+                <h3>Tab 1</h3>
+                <hr size="4" color="pink">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti officiis placeat delectus
+                    unde
+                    similique repellat doloribus iste quo accusamus aliquid distinctio quas, cupiditate nemo?</p>
+            </div>
+        </div>
+        <div class="tab">
+            <span><a href="#tab4">Tab 4</a></span>
+            <div class="tab-content" id="tab4">
+                <h3>Tab 4</h3>
+                <hr size="4" color="pink">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti officiis placeat delectus
+                    unde
+                    similique repellat doloribus iste quo accusamus aliquid distinctio quas, cupiditate nemo?</p>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        $(document).ready(function () {
+            $(".tab a").click(function () {
+                console.log(this);
+                var tabId = $(this).attr("href");
+                $("a").removeClass("active");
+                $(".tab-content").slideUp(1000);
+                $(tabId).slideDown(1000);
+                console.log("ID: ", tabId);
+                $(this).addClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
