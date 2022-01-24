@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: lightgray;
+}
+main {
+  width: 70%;
+  margin: 40px auto;
+  border: 1px solid rgb(129, 129, 129);
+  border-radius: 8px;
+  padding: 15px;
+  background-color: white;
+}
+.btn-container {
+  background-color: lightgray;
+  padding: 10px 10px 0px;
+  border-radius: 5px 5px 0px 0px;
+}
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: rgb(109, 108, 108);
+  color: white;
+}
+button.active {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+.tab-content {
+  display: none;
+}
+div.active {
+  display: block;
+}
