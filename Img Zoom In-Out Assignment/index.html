@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Zoom Assignment using jQuery</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="small-img">
+    <img src="img/img-1.png" alt="Bag 1 image">
+    <img src="img/img-2.png" alt="Bag 2 image">
+    <img src="img/img-3.png" alt="Bag 3 image">
+    <img src="img/img-4.png" alt="Bag 4 image">
+    <img src="img/img-5.png" alt="Bag 5 image">
+  </div>
+  <div class="big-img">
+    <img src="img/img-1.png" class="main-img active" alt="Bag 1 image">
+  </div>
+  <div class="content-conatiner">
+    <h1>Beclina Women's Handbag</h1>
+    <p>&#9733;&#9733;&#9733;&#9733;&#9734; 1,029 ratings</p>
+    <hr>
+    <h2>&#8377;1,066&#160;&#160; <span class="discount">-60%</span></h2>
+    <span>M.R.P.: &#160;<strike>&#8377;2,999.00</strike></span>  
+    <h6>Inclusive of all taxes</h6>
+    Quantity:
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+    <br>
+    <br>
+    <button class="add-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+
+  <div class="popup">
+    <div class="popup-content">
+      <div class="zoom-btn-container">
+        <a class="zoom-in">+</a>
+        <a class="zoom-out">-</a>
+      </div>
+      <div class="img-container">
+        <img src="" alt="" class="zoom-img" />
+      </div>
+      <a class="closeBtn">&#10006;</a>
+    </div>
+  </div>
+  <script src="script.js" type="text/JavaScript"></script>
+</body>
+
+</html>
