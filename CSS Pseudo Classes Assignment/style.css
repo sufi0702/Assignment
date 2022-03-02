@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+h1 {
+  text-decoration: underline;
+}
+/* Fisrt Assignment CSS */
+.assignment-1 li:nth-child(2) {
+  color: blue;
+}
+.assignment-1 li:nth-child(4) {
+  color: blueviolet;
+}
+.assignment-1 li:nth-child(6) {
+  color: chartreuse;
+}
+.assignment-1 li:nth-child(8) {
+  color: darkorange;
+}
+/* Second Assignment CSS */
+.assignment-2 li:nth-child(3) a {
+  color: green;
+}
+/* Thirst Assignment CSS */
+.assignment-3 p:last-child {
+  background-color: aqua;
+}
+/* Fourth Assignment CSS */
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 7px;
+}
+tr:nth-child(even) {
+  background-color: gray;
+  color: white;
+}
+/* Fifth Assignment CSS */
+.assignment-5 a::before {
+  content: "🅱efore";
+  color: black;
+}
+.assignment-5 a::after {
+  content: "🅰fter";
+  color: black;
+}
+/* Sixth Assignment CSS */
+.assignment-6 a {
+  text-decoration: none;
+}
+.assignment-6 a:hover {
+  text-decoration: underline;
+  color: red;
+}
+.assignment-6 a:focus {
+  color: purple;
+}
+.assignment-6 a:active {
+  color: chartreuse;
+}
