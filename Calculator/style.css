@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+}
+main#calculator {
+  text-align: center;
+  margin: 50px auto;
+  width: 20%;
+  background-color: rgb(236, 234, 234);
+  color: rgb(60, 9, 109);
+  padding: 10px;
+  border: 1px solid rgb(60, 9, 109);
+  border-radius: 5px;
+  box-shadow: 10px 10px;
+}
+div#inputs,
+div#result-div {
+  margin: auto;
+  width: 75%;
+}
+div#inputs input {
+  height: 40px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px;
+  color: rgb(60, 9, 109);
+  font-weight: bold;
+}
+div#inputs input:focus {
+  border: 3px solid rgb(60, 9, 109);
+}
+div#result-div {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+div#btn-div button {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(60, 9, 109);
+  font-weight: bolder;
+  cursor: pointer;
+}
+div#btn-div button:hover{
+    color: blueviolet;
+}
+#clear,
+#mod {
+  width: 98%;
+}
+#add,
+#subtract,
+#multiply,
+#divide {
+  width: 45%;
+}
+.error{
+    border: 1px solid red !important;
+}
